@@ -56,3 +56,30 @@
     return val >= 90;
    })
    console.log(score)
+//Q.1: create a H2 heading element with text-"hello javascript".Append "from apna clg students"to this text using js
+ let h2 =document.querySelector("h2")
+  console.dir(h2.innerText)
+  h2.innerText = h2.innerText + " from apna clg students"
+   
+//Q.2:create three divs with common class name-"box" .Access them & add some unique text to each of them
+ let divs = document.querySelectorAll(".box");
+ idx = 1;
+  for(Ele of divs){
+    Ele.innerText = `new unique value ${idx}`
+    idx++;
+  }
+
+//Attributes
+let div = document.querySelector("div")
+console.log(div);
+
+let id = div.getAttribute("id")
+console.log(id)
+//for changing the attribute value 
+  let para = document.querySelector("p")
+   console.log(para.setAttribute("class","new class" ))
+   
+//for style
+ let style = document.querySelector("div")
+  div.style.backgroundColor = "blue"
+    
