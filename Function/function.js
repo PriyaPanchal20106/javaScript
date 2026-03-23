@@ -155,9 +155,103 @@ console.log(addNumbers())
          return a*b
       }
    }
-   
    console.log(calculator)
    console.log(calculator.add(5,10)) //15
+
+   //This keyword
+    const student1 ={
+      name:"Priya",
+      age:25,
+      eng:79,
+      math:85,
+      phy:90,
+      getavg(){
+         let avg = (this.eng + this.math + this.phy)/3
+         console.log(avg)
+         console.log(this)
+         console.log(`${this.name} average is ${avg}`) 
+      } 
+    } 
+    student1.getavg()  
+    
+//this:it refers to the current object that is executing the code
+function demo(){
+   console.log(this)
+}
+demo() //window object:in non strict mode
+
+//try and catch:it is used to handle errors in JavaScript
+ try {
+   console.log("hello")
+   console.log("hello")
+   console.log(o)
+   console.log("welcome")
+   console.log("welcome")
+ } catch  {
+   console.log("o is not define")
+
+ }
+ console.log("welcome") 
+//Arrow function:it is a shorter syntax for writing functions in JavaScript
+ const finalsum = (a,b) =>
+ {
+   return a+b;
+ }
+  console.log(finalsum(5,10)) //15
+//create a function to give cube of a number using arrow function
+ const cube =(num) =>
+ {
+   return num*num*num
+ }
+   console.log(cube(3)) //27
+//create arrow function to print hello
+  const msg =() =>
+  {
+   console.log("hello")
+  }
+  msg()
+//emplicit return: if the function body contains only a single expression, we can omit the curly braces and the return keyword
+   const square = num => num*num
+   console.log(square(5)) //25
+//settimeout:it is a function that is used to execute a function after a specified time interval
+
+//  console.log("Hi there!")
+//   setTimeout(() => {
+//    console.log("kjit")
+//   }, 5000)
+//    console.log("welcome to")
+// //setinterval:it is a function that is used to execute a function repeatedly at specified time intervals
+//   let id = setInterval(() => {
+//    console.log("hello")
+//  }, 1000)
+//  clearInterval(id) //to stop the interval after some time
+//  //print hello every 2 seconds and stop after 5 times with using setinterval and settimeout
+//   let id1 = setInterval(() =>{
+//     console.log("Hello")
+//   },2000)
+//   setTimeout(() => {
+//      clearInterval(id1)
+//   }, 10000);
+
+//create a object to how work this keyword in method
+   const per = {
+      name:"Priya",
+      age:25,
+
+     getage : function(){
+      console.log(this)
+      console.log(this.age)
+     },
+     getName : () => {
+      console.log(this)
+      console.log(this.name)
+     }
+   }
+   console.log(per.getage()) //25
+
+
+  
+
        
  
       
