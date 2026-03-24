@@ -249,6 +249,124 @@ demo() //window object:in non strict mode
    }
    console.log(per.getage()) //25
 
+//Array methods
+ //1.forEach method:
+ let arr = [1,2,3,4,5]
+ arr.forEach(function (ele){
+   console.log(ele)
+ }
+)
+ //arrow 
+  let num = [1,2,3,4,5]
+   num.forEach((ele)=> 
+      {
+   console.log(ele)
+   })
+
+   const arrobj = [
+      {
+         name :"Priya",
+         marks:85
+      },
+      {
+         name: "Anu",
+         marks: 90
+      },
+    {
+         name: "Riya",
+         marks: 80
+      }
+   ]
+   
+   //acess the element of uper object with using arrow function 
+    arrobj.forEach((ele) => {
+      console.log(ele) 
+    })
+
+//2.map method:it is used to create a new array by calling a function for every array element
+let arrmap = [1,2,3,4,5]
+ let newarr = arrmap.map((ele) =>
+    {
+   return ele*2
+})
+   console.log(newarr) //[2,4,6,8,10]
+
+//map method with object
+ let students = [
+   {
+      name:"Priya",
+      marks:85
+   },
+   {
+      name:"ram",
+      marks:90
+   },
+   {
+      name:"shyam",
+      marks :"89"
+   }
+]
+let newcgpa = students.map((ele) => {
+
+   return ele.marks/10
+})
+console.log(newcgpa) //[8.5,9,8.9]
+//Filter method:it is used to create a new array with all elements that pass the test implemented by the provided function 
+  let arrfilter = [1,2,3,4,5,24,25,46]
+   let evenNum = arrfilter.filter((num) => {
+       return num%2==0;
+
+   })
+   console.log(evenNum) //[2,4,24,46]  
+
+//filter example
+ let numbers =[1,0,7,9,8,2,4,6,9]
+  let lessThan5 = numbers.filter((num) => {
+   return num<5
+  })
+  console.log(lessThan5) //[1,0,2,4] 
+
+//every method:it is used to test whether all elements in the array pass the test implemented by the provided function
+ let arrevery = [8,2,4,12,18]
+  let isEven = arrevery.every((num) => {
+   return num%2==0 
+  })
+  console.log(isEven) //true 
+
+//every method example
+ let colors =["red","pink","blue","white","orange","grey"]
+
+ //some method:it is used to test whether at least one element in the array passes the test implemented by the provided function
+  let arrsome =[1,2,3,4,5,6]
+   let hasEven = arrsome.some((num) => {
+   return num%2==0
+    })
+   console.log(hasEven) //true
+//reduce method:it is used to reduce the array to a single value by executing a reducer function on each element of the array 
+ let arrreduce =[1,2,3,4,5]
+  let sumresuce = arrreduce.reduce((res,ele) => {
+   return res+ele
+  })
+  console.log(sumresuce) //15 
+//reduce method example
+  const array = [15, 16, 17, 18, 19];
+
+function reducer(accumulator, currentValue, index) {
+  const returns = accumulator + currentValue;
+  console.log(
+    `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+  );
+  return returns;
+}
+
+array.reduce(reducer);
+  
+
+
+
+  
+
+
 
   
 
