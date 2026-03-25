@@ -360,7 +360,139 @@ function reducer(accumulator, currentValue, index) {
 }
 
 array.reduce(reducer);
+//example of for loop to find max element in an array
+
+ let arrmax =[10,5,12,17,98,75,65]
+   let max = arrmax[0]
+    for (let i=1; i<arrmax.length;i++)
+      {
+         if(arrmax[i]>max){
+            max = arrmax[i]
+         }
+      } 
+      console.log(max) //98
+//example of reduce method to find max element in an array
+   let arrmax1 =[10,5,12,17,80,75,65]
+    let arrfinal=arrmax1.reduce((max,ele) =>
+       {
+      if (max > ele)
+      {
+         return max
+      }
+      else{
+         return ele
+      }
+    })
+  console.log(arrfinal)
+// example : in array the element are divisible by 10
+  let arrsome1 =[10,20,30,40,50]
+   let sum3 = arrsome.every((num) => {
+   return num/10
+    })
+   console.log(sum3) 
+//create function to find min element by using reduce method
   
+ let arrmin2 =[10,2,12,17,80,75,65]
+function min(arrmin2) {
+  let  minArray = arrmin2.reduce((min, ele) => 
+       {
+      if (min < ele)
+      {
+         return min
+      }
+      else{
+         return ele
+      }
+   })
+       return minArray;
+}  
+  console.log(min(arrmin2))
+//Default method:it give passed value to first parameter! They not understand if value is assign to the parameter
+  function add(a,b=1){
+   console.log(a+b)
+  }
+  add(5)
+
+//exp 2
+ function addi(a=5,b)
+ {
+   console.log( a+b)
+ }
+  addi(7,8)//ans15
+  //exp 3
+ function addi(a=5,b)
+ {
+   console.log( a+b)
+ }
+  addi(7)//Nan
+//exp 4:multiply
+function multiply(a=4 , b){
+   return a*b
+}
+console.log(multiply(5,2))
+console.log(multiply(5))//NaN
+
+//spread operator:(...)syntax allow at iterates
+//Function argument (myfun(a,...iterableobj,b))
+//array literls[1,...iterableobj,'4',5]
+//object literal({...obj,key:'value'})
+ let arrnums = [1,2,3,4,6]
+ console.log(arrnums)
+ console.log(...arrnums)
+ console.log(Math.min(...arrnums))
+
+ //in string
+
+ let str="hello"
+ console.log(str)
+ console.log(...str)//ans is separate by every element
+
+ //exp 
+ let str1="hello"
+  let newstr=[...str1]
+
+//exp 
+let even =[2,4,6,8,10]
+let odd =[1,3,5,7,9]
+
+let evenodd=[...even,...odd]
+ console.log(evenodd)
+
+ //spread operator with object literals
+  let data = {
+   username:'priya@gmail.come',
+   pass: 'abcd'
+  }
+  let fulldata={...data , id:123,city:'pune'}
+  console.log(fulldata)
+//exp 
+ let numer=[10,20,30,40]
+  let obj ={...numer}
+  console.log(obj)
+//exp 
+let text ="hello"
+let objr ={...str}
+
+//Desrtucturing
+//with array
+ let names = ['priya','riya','snehal','vidhi']
+  let [winner, runnerup,  secondrunnerup,...others ] =names
+  console.log(runnerup,others)
+//with object
+  const details ={
+   name:'karan',
+   age:16,
+   subject:['math','phy','chem'],
+   username:'karan@gmail.com',
+   pass:'fght',
+   city:'vadodara'
+  }
+  let{username='user',pass}=details
+  console.log()
+  let {city:place='anand'}=details
+  console.log(place)
+  
+ 
 
 
 
