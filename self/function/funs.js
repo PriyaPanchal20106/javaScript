@@ -82,4 +82,7 @@ console.log(id)
 //for style
  let style = document.querySelector("div")
   div.style.backgroundColor = "blue"
+
+
+
     
