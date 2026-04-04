@@ -6,7 +6,7 @@ console.log("Sum of a and b is: " + c)
 
 let age = 25
 age+= 5
-console.log("Age after 5 years: " + age)
+console.log("Age after 5 years: " + age) 
 
 let age1 = 30
 let newage = ++age1
@@ -18,13 +18,7 @@ let newage2 = age2++
 console.log(age2)
 console.log(newage2)
 console.log(typeof(NaN))
-
-
-
-
 //alert concept
-
-
 
 //prompt concept
 
@@ -38,10 +32,8 @@ console.log(typeof(NaN))
     console.error("This is an error message")
 
     console.warn("This is a warning message")
-
+//Trim method:to remove white space if desired code
     let str ="   welcome  to kjit    "
-
-
     console.log(str.trim())
 
     let name = "priYa panchal"
@@ -66,15 +58,19 @@ console.log(typeof(NaN))
         console.log(message.slice(3))
         console.log(message)
         console.log(message.slice(1,3))
-        // no effect on original array
+ // no effect on original array
 //splice method
       let msg=["red","yellow","black","orange","pink","white"]
        console.log(msg.splice(4))
         console.log(msg)
-        console.log(msg.splice(0,1))
+        console.log(msg.splice(0,1)) 
         console.log(msg)
-        console.log(msg.splice(0,1,"blue","gray","green"))
+        console.log(msg.splice(0,1,"blue","gray","green"))  
         console.log(msg)
+
+        const fruitse = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+          const citrus = fruitse.slice(1, 3);
+                console.log(citrus)
 
 //replace method
          let text="ILoveCoding"
@@ -83,9 +79,31 @@ console.log(typeof(NaN))
 //repeat method
          let car="BMW"
          console.log(car.repeat(3))
+//example:
+
+         const stri = "Twas the night before Xmas...";
+        const newStr = stri.replace(/xmas/i, "Christmas");
+        console.log(newStr);
+
 //split method
+
          let hobby="i love coding"
          console.log(hobby.split(" "))
+//example:
+        const stre = "The quick brown fox jumps over the lazy dog.";
+         const words = stre.split(" ");
+         console.log(words[3]);
+
+//example:
+         const emptyString = "";
+
+     // string is empty and separator is non-empty
+       console.log(emptyString.split("a"));
+      // [""]  
+
+     // string and separator are both empty strings
+      console.log(emptyString.split(emptyString));
+      // []
 
 //array methods:first create an array
           let fruits=["apple","banana","grapes"]   
