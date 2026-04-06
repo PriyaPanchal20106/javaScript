@@ -51,6 +51,41 @@ let p4 =document.querySelector("p")
 //3.textContent:in this the output is print  same as we write the code
 let p3 =document.querySelector("p") 
   console.dir(p3.textContent)
+//Manupulating Attributes:
+let img2 = document.querySelector("#img")
+ img2 =img2.getAttribute('src')
+ console.dir(img2) 
+
+//Manupulating Style:
+ 
+let head = document.querySelector("h1")
+ console.dir(head.style.backgroundColor = '') 
+
+ let links =document.querySelectorAll("div a ")
+  console.dir(links )
+  for (links of links){
+    console.dir(links.style.Color = '') 
+  }
+//classlist:
+    let sel = document.querySelector('h1')
+    console.dir(sel.classList)
+//to make class with using js
+ let doc = document.querySelector('h1')
+  console.dir(doc.classList.add('green'))
+  console.dir(doc.classList.remove('green'))
+  console.dir(doc.classList.contains('green'))//if class present than give true otherwise give false
+  console.dir(doc.classList.contains('abc')) 
+//toggle method:
+let dot = document.querySelector('h1')
+  console.dir(doc.classList.add('green'))
+  console.dir(dot.classList.toggle('green'))//if class is not present than add the class and if class is present than remove the class
+   console.dir(doc.classList.remove('green'))
+    console.dir(dot.classList.toggle('green')) 
+//set the pubinfo gray to yellow
+let pub = document.querySelector('.pubInfo')
+ console.dir(pub.style.backgroundColor = 'yellow')  
+
+ 
 
  
   

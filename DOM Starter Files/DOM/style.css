@@ -17,3 +17,8 @@
     height: 25rem;
     margin: 5px;
 }
+.green{
+    color: greenyellow;
+    background-color: blue;
+    text-decoration: underline black wavy;
+}
