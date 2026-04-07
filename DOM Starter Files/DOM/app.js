@@ -83,8 +83,78 @@ let dot = document.querySelector('h1')
     console.dir(dot.classList.toggle('green')) 
 //set the pubinfo gray to yellow
 let pub = document.querySelector('.pubInfo')
- console.dir(pub.style.backgroundColor = 'yellow')  
+    console.dir(pub.classList.add("yellow")) 
+  
 
+//Navigation on page:
+//1.children:
+let root = document.querySelector('.container')
+ console.dir(root.children)
+ //2.Parent element:
+ let parentEle = document.querySelector('h1')
+  console.dir(parentEle.parentElement)
+//3.siblings:
+let sib = document.querySelector('h2')
+ console.dir(sib.previousSibling)
+
+ //Adding Element:
+ let newp = document.createElement('p')
+ console.dir(newp) 
+ newp.innerText = 'Hi I am para'
+ console.dir(newp)
+//here use appendchild property to apply at document
+ let any = document.querySelector('body')
+  any.appendChild(newp)
+  console.dir(any)
+
+//create new para and add that
+  let para = document.createElement('p')
+  console.dir(para)
+  para.innerText = 'I am new para'
+  console.dir(para)
+  let lorem = document.querySelector('body')
+  lorem.appendChild(para)
+  console.dir(lorem) 
+//create button and apply at the pubInfo class:
+  // let btn = document.createElement('button')
+  // btn.innerHTML = ' click Me! '
+  // console.dir(btn)
+
+  // let final = document.querySelector('.pubInfo')
+  // final.appendChild(btn) //append method is used to below the block
+  // console.dir(final)
+  // let btn = document.createElement('button')
+  // btn.innerHTML = ' click Me! '
+  // console.dir(btn)
+
+  // let final = document.querySelector('.pubInfo')
+  // final.prepend(btn)
+  // console.dir(final)//prepend is used to button place at top in the block
+
+//insert adjacent method:
+//1.beforebegin
+// let btn1 = document.createElement('button')
+//   btn.innerHTML = ' Before begin! '
+//   console.dir(btn1)
+
+//   let final1 = document.querySelector('.pubInfo')
+//   final.insertAdjacentElement("beforebegin",btn1)
+//   console.dir(final1)
+//2.after begin:
+let btn2 = document.createElement('button')
+  btn2.innerHTML = ' after begin! '
+  
+  let final2 = document.querySelector('.pubInfo')
+  final2.insertAdjacentElement("afterbegin",btn2)
+  console.dir(final2)
+
+//Remove method:
+// let info = document.querySelector('body')
+// console.dir(info.remove()) //remove the whole body 
+
+
+
+  
  
 
  
