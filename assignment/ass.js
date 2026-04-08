@@ -1,3 +1,4 @@
+
 //Q.1:<p> with red text that says "I am red"
 
    let red = document.createElement('p')//first to create para 
@@ -5,7 +6,7 @@
     red.classList.add("red")//then add class in this
 
     let redobj = document.querySelector('body')
-    redobj.append(red)//for desplay on document
+    redobj.append(red)//for desplay on document  
     
 
 //Q.2:<h3>with blue color style 'hey I am h3'
@@ -36,4 +37,6 @@
     body.appendChild(newobj)
     
     
+
+
 

@@ -105,8 +105,7 @@ let sib = document.querySelector('h2')
 //here use appendchild property to apply at document
  let any = document.querySelector('body')
   any.appendChild(newp)
-  console.dir(any)
-
+  
 //create new para and add that
   let para = document.createElement('p')
   console.dir(para)
