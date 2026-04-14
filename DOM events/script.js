@@ -3,8 +3,12 @@
 //     console.log("para was clicked")
 // })  
 
-let box = document.querySelector(".box")
-box.addEventListener("mouseenter",function(){
+// let box = document.querySelector(".box")
+// box.addEventListener("mouseenter",function(){
+//     console.log("you entered in box")
+// }) 
+let over = document.querySelector(".box")
+over.addEventListener("mouseover",function(){
     console.log("you entered in box")
 }) 
 
