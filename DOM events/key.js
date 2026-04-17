@@ -45,5 +45,16 @@
          }
     })
 
+   const k = document.getElementById("k");
 
+  // Let k listen for keydown
+   k.addEventListener("keydown", function (event) {
+  // Then display the event.key
+   document.getElementById("demo").innerHTML = "You pressed: " + event.key;
+    });
    
+//next example
+   // Add Event Listener to document
+     document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("demo").innerHTML = "HTML is loaded!";
+   });
