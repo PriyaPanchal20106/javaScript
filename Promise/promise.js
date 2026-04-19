@@ -10,3 +10,4 @@ setTimeout(function(){
 
 console.log("my name is hello three")
 console.log(promise)
+
