@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    background-color: pink;
+    height: 200px;
+    width: 400px;
+}
+ul{
+    background-color: red;
+}
+li{
+    background-color: green;
+}
